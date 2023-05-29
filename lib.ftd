@@ -1,0 +1,294 @@
+-- import: shaheen-senpai.github.io/fastn-components/assets
+
+
+
+-- component separator:
+
+-- ftd.column:
+width: fill-container
+background.solid: #ffffff
+
+-- ftd.text: **NEXT COMPONENT**
+margin-left.px: 16
+
+-- end: ftd.column
+
+-- end: separator
+
+
+
+
+
+
+
+
+
+-- component contact-1:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+-- ftd.column:
+width.fixed.percent: 27
+padding.px: 32  
+background.solid: #000033
+
+-- ftd.text: $contact-1.headline
+margin-bottom.px: 4
+role: $inherited.types.heading-tiny
+color: $inherited.colors.border
+
+-- ftd.text: $contact-1.content
+margin-bottom.px: 20
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+;;placeholder: example@domain.com
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+placeholder: 
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+width: fill-container
+height.fixed.px: 150
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+-- ftd.text: $contact-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-1.link-1
+
+-- end: ftd.column
+
+
+
+-- end: contact-1
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-2:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: $contact-2.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.text: $contact-2.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.column:
+padding-bottom.px: 32
+border-bottom-width.px: 1
+border-bottom-color: $inherited.colors.border
+
+-- ftd.row:
+margin-bottom.px: 32
+
+-- ftd.column:
+margin-right.px: 8
+
+-- ftd.text: Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+-- end: ftd.column
+
+-- ftd.column:
+margin-left.px: 8
+
+-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 150
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+
+-- ftd.text: $contact-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+align-self: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-2.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-2.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-2.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-2.link-1
+
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-top.px: 32
+align-content: center
+
+-- ftd.text: example@email.com
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 20
+
+-- ftd.text: 123-456-7890
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: TRIZWIT, Ernakulam, Kerala, India
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+
+-- ftd.row:
+align-content: center
+margin-top.px: 20
+
+-- ftd.image:
+src: $contact-2.facebook
+width.fixed.percent: 2
+
+-- ftd.image:
+src: $contact-2.twitter
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+-- ftd.image:
+src: $contact-2.instagram
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+-- ftd.image:
+src: $contact-2.linkedin
+width.fixed.percent: 2
+margin-left.px: 12
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: contact-2
+
+
+
+
