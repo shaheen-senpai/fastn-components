@@ -461,3 +461,91 @@ link: $content-1.link-1
 -- end: ftd.column
 
 -- end: content-1
+
+
+
+
+
+
+
+
+
+-- component drop-down:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $open: false
+
+-- ftd.column:
+width: fill-container
+height.fixed.vh: 70
+align-content: center
+background.solid: #a1a1a1
+
+
+
+-- ftd.column:
+width.fixed.px: 300
+height.fixed.px: 200
+;;anchor: window
+
+-- ftd.text: Drop Down
+width: fill-container
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #020203
+$on-click$: $ftd.toggle($a = $drop-down.open)
+color: #C3D5D8
+
+-- ftd.column:
+if: { drop-down.open }
+width.fixed.px: 300
+z-index: 2
+
+-- ftd.text: option 1
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #020203
+background.solid if {drop-down.is-active-1}: #576163
+$on-mouse-enter$: $ftd.set-bool($a = $drop-down.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $drop-down.is-active-1, v = false)
+color: #C3D5D8
+
+
+-- ftd.text: option 2
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #020203
+background.solid if {drop-down.is-active-2}: #576163
+$on-mouse-enter$: $ftd.set-bool($a = $drop-down.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $drop-down.is-active-2, v = false)
+color: #C3D5D8
+
+
+-- ftd.text: option 3
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: #020203
+background.solid if {drop-down.is-active-3}: #576163
+$on-mouse-enter$: $ftd.set-bool($a = $drop-down.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $drop-down.is-active-3, v = false)
+color: #C3D5D8
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: drop-down
+
+
+
