@@ -23,448 +23,6 @@ margin-left.px: 16
 
 
 
--- component contact-1:
-caption headline:
-body content:
-string cta-button-1:
-string link-1:
-boolean $is-active-1: false
-
--- ftd.column:
-width.fixed.percent: 27
-padding.px: 32  
-background.solid: #000033
-
--- ftd.text: $contact-1.headline
-margin-bottom.px: 4
-role: $inherited.types.heading-tiny
-color: $inherited.colors.border
-
--- ftd.text: $contact-1.content
-margin-bottom.px: 20
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text: Email
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 4
-
--- ftd.text-input:
-;;placeholder: example@domain.com
-padding-vertical.px: 4
-padding-horizontal.px: 8
-margin-bottom.px: 16
-width: fill-container
-border-radius.px: 5
-border-width.px: 1
-border-color: $inherited.colors.border
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
-color: $inherited.colors.border
-
--- ftd.text: Message
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 4
-
--- ftd.text-input:
-placeholder: 
-multiline: true
-padding-vertical.px: 4
-padding-horizontal.px: 8
-margin-bottom.px: 20
-width: fill-container
-height.fixed.px: 150
-border-radius.px: 5
-border-width.px: 1
-border-color: $inherited.colors.border
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
-color: $inherited.colors.border
-
--- ftd.text: $contact-1.cta-button-1
-role: $inherited.types.label-large
-text-align: center
-width: fill-container
-padding-vertical.px: 8
-padding-horizontal.px: 24
-border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
-$on-mouse-enter$: $ftd.set-bool($a = $contact-1.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-1.is-active-1, v = false)
-color: $inherited.colors.border
-link: $contact-1.link-1
-
--- end: ftd.column
-
-
-
--- end: contact-1
-
-
-
-
-
-
-
-
-
-
-
--- component contact-2:
-caption headline:
-body content:
-string cta-button-1:
-string link-1:
-boolean $is-active-1: false
-ftd.image-src facebook:
-ftd.image-src twitter:
-ftd.image-src instagram:
-ftd.image-src linkedin:
-
--- ftd.column:
-width: fill-container
-height: hug-content
-align-content: center
-padding-horizontal.px: 100
-padding-vertical.px: 96
-background.solid: $inherited.colors.background.base
-
--- ftd.text: $contact-2.headline
-margin-bottom.px: 16
-role: $inherited.types.heading-medium
-color: $inherited.colors.border
-
--- ftd.text: $contact-2.content
-margin-bottom.px: 32
-role: $inherited.types.copy-regular
-color: $inherited.colors.border
-
-
--- ftd.column:
-padding-bottom.px: 32
-border-bottom-width.px: 1
-border-bottom-color: $inherited.colors.border
-
--- ftd.row:
-margin-bottom.px: 32
-
--- ftd.column:
-margin-right.px: 8
-
--- ftd.text: Name
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 4
-
--- ftd.text-input:
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-radius.px: 5
-border-width.px: 1
-border-color: $inherited.colors.border
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
-color: $inherited.colors.border
--- end: ftd.column
-
--- ftd.column:
-margin-left.px: 8
-
--- ftd.text: Email
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 4
-
--- ftd.text-input:
-padding-vertical.px: 4
-padding-horizontal.px: 8
-width: fill-container
-border-radius.px: 5
-border-width.px: 1
-border-color: $inherited.colors.border
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
-color: $inherited.colors.border
--- end: ftd.column
-
--- end: ftd.row
-
-
--- ftd.text: Message
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 4
-
--- ftd.text-input:
-width: fill-container
-height.fixed.px: 150
-multiline: true
-padding-vertical.px: 4
-padding-horizontal.px: 8
-margin-bottom.px: 20
-border-radius.px: 5
-border-width.px: 1
-border-color: $inherited.colors.border
-type: text
-role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
-color: $inherited.colors.border
-
-
--- ftd.text: $contact-2.cta-button-1
-role: $inherited.types.label-large
-text-align: center
-align-self: center
-padding-vertical.px: 8
-padding-horizontal.px: 24
-border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {contact-2.is-active-1}: $inherited.colors.info.text
-$on-mouse-enter$: $ftd.set-bool($a = $contact-2.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $contact-2.is-active-1, v = false)
-color: $inherited.colors.border
-link: $contact-2.link-1
-
-
--- end: ftd.column
-
--- ftd.column:
-padding-top.px: 32
-align-content: center
-
--- ftd.text: example@email.com
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-margin-bottom.px: 20
-
--- ftd.text: 123-456-7890
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
--- ftd.text: TRIZWIT, Ernakulam, Kerala, India
-role: $inherited.types.copy-small
-color: $inherited.colors.border
-
-
--- ftd.row:
-align-content: center
-margin-top.px: 20
-
--- ftd.image:
-src: $contact-2.facebook
-width.fixed.percent: 2
-
--- ftd.image:
-src: $contact-2.twitter
-width.fixed.percent: 2
-margin-left.px: 12
-margin-top.px: 3
-
--- ftd.image:
-src: $contact-2.instagram
-width.fixed.percent: 2
-margin-left.px: 12
-margin-top.px: 3
-
--- ftd.image:
-src: $contact-2.linkedin
-width.fixed.percent: 2
-margin-left.px: 12
-
--- end: ftd.row
-
-
--- end: ftd.column
-
-
--- end: ftd.column
-
--- end: contact-2
-
-
-
-
-
-
-
-
-
-
-
--- component content-1:
-caption headline:
-body content:
-string kicker-1:
-string cta-button-1:
-string link-1:
-boolean $is-active-1: false
-
--- ftd.column:
-width: fill-container
-height: hug-content
-align-content: center
-padding-horizontal.px: 100
-padding-vertical.px: 96
-background.solid: $inherited.colors.background.base
-
--- ftd.text: $content-1.kicker-1
-margin-bottom.px: 8
-text-align: center
-role: $inherited.types.heading-tiny
-color: $inherited.colors.custom.one
-
--- ftd.text: $content-1.headline
-margin-bottom.px: 16
-text-align: center
-role: $inherited.types.heading-medium
-color: $inherited.colors.border
-
--- ftd.text: $content-1.content
-margin-bottom.px: 32
-padding-horizontal.px: 100
-text-align: center
-role: $inherited.types.copy-regular
-color: $inherited.colors.border
-
-
--- ftd.row:
-
--- ftd.column:
-border-left-width.px: 1
-border-left-color: $inherited.colors.border
-
--- ftd.column:
-padding-horizontal.px: 32   
-padding-vertical.px: 24
-
--- ftd.text: Shooting Stars
-role: $inherited.types.heading-tiny
-text-align: start
-margin-bottom.px: 8
-
--- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
-role: $inherited.types.copy-regular
-text-align: start
-margin-bottom.px: 16
-
--- ftd.text: Learn More
-role: $inherited.types.copy-regular
-text-align: start
-color: $inherited.colors.custom.one
-link: $content-1.link-1
-
--- end: ftd.column
-
--- ftd.column:
-padding-horizontal.px: 32   
-padding-vertical.px: 24
-
--- ftd.text: Shooting Stars
-role: $inherited.types.heading-tiny
-text-align: start
-margin-bottom.px: 8
-
--- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
-role: $inherited.types.copy-regular
-text-align: start
-margin-bottom.px: 16
-
--- ftd.text: Learn More
-role: $inherited.types.copy-regular
-text-align: start
-color: $inherited.colors.custom.one
-link: $content-1.link-1
-
--- end: ftd.column
-
--- end: ftd.column
-
-
--- ftd.column:
-border-left-width.px: 1
-border-left-color: $inherited.colors.border
-
--- ftd.column:
-padding-horizontal.px: 32   
-padding-vertical.px: 24
-
--- ftd.text: Shooting Stars
-role: $inherited.types.heading-tiny
-text-align: start
-margin-bottom.px: 8
-
--- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
-role: $inherited.types.copy-regular
-text-align: start
-margin-bottom.px: 16
-
--- ftd.text: Learn More
-role: $inherited.types.copy-regular
-text-align: start
-color: $inherited.colors.custom.one
-link: $content-1.link-1
-
--- end: ftd.column
-
--- ftd.column:
-padding-horizontal.px: 32   
-padding-vertical.px: 24
-
--- ftd.text: Shooting Stars
-role: $inherited.types.heading-tiny
-text-align: start
-margin-bottom.px: 8
-
--- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
-role: $inherited.types.copy-regular
-text-align: start
-margin-bottom.px: 16
-
--- ftd.text: Learn More
-role: $inherited.types.copy-regular
-text-align: start
-color: $inherited.colors.custom.one
-link: $content-1.link-1
-
--- end: ftd.column
-
--- end: ftd.column
-
-
--- end: ftd.row
-
-
--- ftd.text: $content-1.cta-button-1
-role: $inherited.types.button-large
-text-align: center
-align-self: center
-margin-top.px: 64
-padding-vertical.px: 8
-padding-horizontal.px: 32
-border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {content-1.is-active-1}: $inherited.colors.info.text
-$on-mouse-enter$: $ftd.set-bool($a = $content-1.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $content-1.is-active-1, v = false)
-color: $inherited.colors.border
-link: $content-1.link-1
-
-
--- end: ftd.column
-
--- end: content-1
-
-
-
-
 
 
 
@@ -476,9 +34,13 @@ boolean $is-active-2: false
 boolean $is-active-3: false
 boolean $open: false
 
+
 -- ftd.column:
-width: fill-container
-height.fixed.vh: 70
+
+-- ftd.column:
+height.fixed.px: 400
+width.fixed.px: 800
+padding.px: 20
 align-content: center
 background.solid: #a1a1a1
 
@@ -545,7 +107,571 @@ color: #C3D5D8
 
 -- end: ftd.column
 
+-- end: ftd.column
+
 -- end: drop-down
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component drop-down-1:
+ftd.image-src search:
+ftd.image-src arrow-up: $assets.files.images.arrow-up.png
+ftd.image-src arrow-down: $assets.files.images.arrow-down.png
+boolean $open-1: false
+children c:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 700
+align-content: center
+background.solid: #fffff1
+
+
+
+
+
+
+-- ftd.column:
+width.fixed.px: 700
+height: hug-content
+border-radius.px: 8
+z-index: 1
+background.solid: #e9e9e9
+id: 9
+
+
+
+
+-- ftd.column:
+if: { drop-down-1.open-1 }
+width.fixed.px: 700
+height.fixed.px: 350
+border-radius.px: 8
+z-index: 1
+background.solid: #222
+anchor.id: 9
+
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 50
+padding-left.px: 20
+border-radius.px: 8
+background.solid: #333333
+z-index: 2
+
+-- ftd.image:
+src: $drop-down-1.search
+height.fixed.px: 20
+width.fixed.px: 20
+align-self: center
+$on-click$: $ftd.set-bool($a = $drop-down-1.open-1, v = false)
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 44
+padding-left.px: 10
+placeholder: Search
+margin-left.px: 10
+align-self: center
+background.solid: #333333
+color: #ffffff
+
+-- drop:
+arrow-up: $drop-down-1.arrow-up
+arrow-down: $drop-down-1.arrow-down
+clr: $drop-down-1.open-1
+
+-- end: ftd.row
+
+
+
+-- ftd.column:
+margin.px: 30
+css: [ $assets.files.scroll.css ]
+classes: body
+
+
+-- ftd.text: Follow what's brand new in digital design.
+role: $inherited.types.heading-medium
+color: #f1f1f1
+
+-- ftd.text: Follow what's brand new in digital design.
+role: $inherited.types.heading-medium
+color: #f1f1f1
+
+
+-- ftd.text: Follow what's brand new in digital design.
+role: $inherited.types.heading-medium
+color: #f1f1f1
+
+-- ftd.text: Follow what's brand new in digital design.
+role: $inherited.types.heading-medium
+color: #f1f1f1
+
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.column
+
+
+
+
+
+
+
+
+
+
+-- ftd.row:
+if: { !drop-down-1.open-1 }
+width.fixed.px: 700
+height.fixed.px: 50
+border-radius.px: 8
+z-index: 1
+background.solid: #e9e9e9
+spacing: space-between
+anchor.id: 9
+
+
+
+-- ftd.row:
+width.fixed.percent: 70
+height: fill-container
+padding-left.px: 20
+$on-click$: $ftd.set-bool($a = $drop-down-1.open-1, v = true)
+
+-- ftd.image:
+src: $drop-down-1.search
+height.fixed.px: 20
+width.fixed.px: 20
+align-self: center
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 44
+padding-left.px: 10
+placeholder: Search
+margin-left.px: 10
+align-self: center
+background.solid: #e9e9e9
+
+-- end: ftd.row
+
+
+-- drop:
+arrow-up: $drop-down-1.arrow-up
+arrow-down: $drop-down-1.arrow-down
+clr: $drop-down-1.open-1
+
+-- end: ftd.row
+
+
+
+
+
+
+
+
+
+
+
+
+-- end:ftd.column
+
+
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: drop-down-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component drop:
+ftd.image-src arrow-up:
+ftd.image-src arrow-down:
+boolean $open: false
+boolean clr:
+
+-- ftd.row:
+height: fill-container
+align-self: center
+$on-click$: $ftd.toggle($a = $drop.open)
+id: 1
+
+
+
+-- ftd.row:
+if: { !drop.open }
+height: fill-container
+align-self: center
+padding-right.px: 20
+
+-- ftd.text: Inspiration
+align-self: center
+margin-vertical.px: 8
+margin-horizontal.px: 24
+color: #222
+color if {drop.clr}: #8c8c8c
+
+-- ftd.image:
+src: $drop.arrow-down
+height.fixed.px: 13
+width.fixed.px: 13
+align-self: center
+
+-- end: ftd.row
+
+
+
+
+-- ftd.column:
+if: { drop.open }
+height: hug-content
+width: fill-container
+border-radius.px: 8
+z-index: 2
+background.solid: #000000
+
+
+-- ftd.row:
+height.fixed.px: 50
+align-self: center
+padding-right.px: 20
+
+-- ftd.text: Inspiration
+align-self: center
+margin-vertical.px: 8
+margin-horizontal.px: 24
+color: #ffffff
+
+-- ftd.image:
+src: $drop.arrow-up
+height.fixed.px: 13
+width.fixed.px: 13
+align-self: center
+
+-- end: ftd.row
+
+
+-- ftd.text: option 1
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+color: #ffffff
+
+-- ftd.text: option 2
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+color: #ffffff
+
+-- ftd.text: option 3
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+$on-click$: $ftd.set-bool($a = $popup-1-status, v = true)
+color: #ffffff
+
+-- ftd.text: option 4
+width: fill-container
+role: $inherited.types.label-large
+padding-vertical.px: 8
+padding-horizontal.px: 24
+$on-click$: $ftd.set-bool($a = $pop-up-status, v = true)
+color: #ffffff
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.row
+
+-- end: drop
+
+
+
+
+
+
+
+
+
+
+
+
+-- boolean $claim-button-status: false
+
+-- boolean $pop-up-status: false
+
+-- component nft-mint-popup:
+optional caption title: ABCD
+optional body body: DFET
+ftd.image-src cross-icon:
+
+-- ftd.column:
+if: { $pop-up-status }
+anchor: window
+width: fill-container
+height: fill-container
+;;opacity: 0.5
+background.solid: #000000
+z-index: 9999999999
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.column:  
+width.fixed.percent: 48
+border-width.px: 1
+border-radius.px: 20
+border-color: #3FB488
+background.solid: #fffff1
+padding-left.px: 30
+padding-right.px: 30
+padding-bottom.px: 30
+
+-- ftd.row:
+align-content: right
+align-self: end
+
+-- ftd.image:
+margin-top.px: 16
+src: $nft-mint-popup.cross-icon
+height.fixed.px: 14
+width.fixed.px: 14
+$on-click$: $ftd.set-bool($a = $pop-up-status, v = false)
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+align-content: center
+margin-top.px: 32
+spacing.fixed.px: 30
+
+-- ftd.column:
+padding.px: 20
+border-radius.px: 20
+width.fixed.percent: 50
+border-width.px: 2
+border-color: #C3D9EE
+height.fixed.percent:
+background.solid: #D3D9EE
+
+-- ftd.text: float button
+role: 
+color: #005FBB
+
+-- ftd.text: test text
+margin-top.px: 24
+role: 
+style: bold
+color: #005FBB
+ 
+-- end: ftd.column
+
+-- ftd.column:
+padding.px: 20
+border-radius.px: 20
+border-width.px: 2
+border-color: #7D8180
+width.fixed.percent: 50
+
+-- ftd.text: float button
+role: 
+
+-- ftd.text: test text
+margin-top.px: 24
+role: 
+style: bold
+ 
+-- end: ftd.column
+           
+-- end: ftd.row
+
+-- ftd.row:
+margin-top.px: 40
+width: fill-container
+background.solid: #CFB488
+border-radius.px: 10
+border-color: #3FB488
+border-width.px: 1
+padding-vertical.px: 15
+align-content: center
+;;$on-click$: $funct.mockMintApi()
+
+-- ftd.text: go to next
+role: 
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-top.px: 24
+width: fill-container
+background.solid: White
+border-radius.px: 10
+border-color: #3FB488
+border-width.px: 1
+padding-vertical.px: 15
+align-content: center
+
+-- ftd.text: go to previous
+role: 
+align-self: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: nft-mint-popup
+
+
+
+
+
+
+
+
+
+
+
+
+-- boolean $popup-1-status: false
+
+-- ftd.shadow s:
+color: #A3A5AD
+blur.px: 5
+
+
+-- component popup-1:
+ftd.image-src tick-icon:
+
+
+
+
+-- ftd.column:
+if: { $popup-1-status }
+anchor: window
+align-self: center
+width.fixed.px: 300
+height.fixed.px: 500
+border-top-right-radius.px: 20
+border-top-left-radius.px: 20
+border-bottom-right-radius.px: 20
+border-bottom-left-radius.px: 20
+z-index: 1000
+shadow: $s
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.percent: 50
+align-content: center
+background.solid: #5DB89B
+border-top-right-radius.px: 20
+border-top-left-radius.px: 20
+
+
+
+-- ftd.image:
+src: $popup-1.tick-icon
+width.fixed.px: 200
+height.fixed.px: 200
+
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.percent: 50
+align-content: center
+background.solid: #fdfdfd
+spacing: space-evenly
+border-bottom-right-radius.px: 20
+border-bottom-left-radius.px: 20
+
+
+-- ftd.text: Thank you  we just sent you an email to confirm your email address
+role:
+color: #000000
+padding.px: 10
+align-self: center  
+text-align: center
+
+-- ftd.text:   close   
+role:
+color: #000000
+$on-click$: $ftd.set-bool($a = $popup-1-status, v = false)
+padding.px: 20
+border-radius.px: 20
+border-width.px: 2
+border-color: #7D8180
+
+-- end: ftd.column
+
+
+
+
+-- end: ftd.column
+
+-- end: popup-1
