@@ -13,27 +13,11 @@
 
 
 
--- lib.contact-1: Feedback
-cta-button-1: Button
-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-Post-ironic portland shabby chic echo park, banjo fashion axe
-
-
--- lib.separator:
-
-
-
--- lib.contact-2: Contact Us
-cta-button-1: Button
-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-facebook: $assets.files.images.facebook.svg
-twitter: $assets.files.images.twitter.svg
-instagram: $assets.files.images.instagram.svg
-linkedin: $assets.files.images.linkedin.svg
-
-Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
-
+-- lib.drop-down-1:
+search: $assets.files.images.search-svg.svg
+arrow-up: $assets.files.images.arrow-up.png
+arrow-down: $assets.files.images.arrow-down.png
 
 
 
@@ -42,23 +26,14 @@ Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
 
 
 
-
-
-
-
--- lib.content-1: Master Cleanse Reliac Heirloom
-kicker-1: ROOF PARTY POLAROID
-cta-button-1: Button
-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-
-Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
-Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
-
-
-
-
+-- lib.nft-mint-popup:
+cross-icon: $assets.files.images.cross-icon.png
 
 -- lib.separator:
 
 
 
+
+
+-- lib.popup-1:
+tick-icon: $assets.files.images.tick-icon.svg
