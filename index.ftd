@@ -37,3 +37,19 @@ cross-icon: $assets.files.images.cross-icon.png
 
 -- lib.popup-1:
 tick-icon: $assets.files.images.tick-icon.svg
+
+
+
+
+
+-- lib.toast-alerts:
+menu: $assets.files.images.menu.svg
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+
+-- lib.toast-alerts-message:
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+cross: $assets.files.images.cross.svg
